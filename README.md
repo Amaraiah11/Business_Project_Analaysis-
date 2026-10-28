@@ -1,41 +1,69 @@
+# ☕ Business Analytics Laboratory Suite — Power Query ETL & Multi-Experiment Dashboards
+
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=854D0E,CA8A04,FACC15&height=220&section=header&text=Business%20Analytics%20Laboratory&fontSize=40&fontColor=ffffff&fontAlignY=38&desc=Power%20Query%20ETL%2C%20Cafe%20Sales%20Cleaning%20%26%20Executive%20BI%20Dashboards&descSize=16&descAlignY=60&descAlign=50" width="100%" alt="Business Analytics Laboratory Banner" />
+</p>
+
+<p align="center">
+  <b>Comprehensive Multi-Experiment Laboratory Portfolio: Power Query M Data Cleansing, Cafe Sales Auditing, and Power BI Reporting.</b>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Power%20BI%20Desktop-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" alt="Power BI" />
   <img src="https://img.shields.io/badge/ETL-Power%20Query%20M-107C41?style=for-the-badge&logo=microsoftexcel&logoColor=white" alt="Power Query" />
   <img src="https://img.shields.io/badge/Course-BCA%20Semester%20V-1E3A8A?style=for-the-badge" alt="Course" />
-  <img src="https://img.shields.io/badge/Status-Completed%20Lab%20Suite-success?style=for-the-badge" alt="Status" />
+  <img src="https://img.shields.io/github/stars/Amaraiah11/Business_Project_Analaysis-?style=for-the-badge&color=gold" alt="Stars" />
 </p>
 
-<a id="overview"></a>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=mysql,git,github,vscode" alt="Tools" />
+</p>
+
+---
+
+<a id="table-of-contents"></a>
+## 📌 Table of Contents
+
+- [📖 Executive Summary & Overview](#executive-summary--overview)
+- [🎯 Key Features & Capabilities](#key-features--capabilities)
+- [🏗️ System Architecture & Pipeline](#system-architecture--pipeline)
+- [🛠️ Tech Stack Breakdown](#tech-stack-breakdown)
+- [🔬 Laboratory Experiments Breakdown](#laboratory-experiments-breakdown)
+- [⚙️ Reproducible Quickstart & Setup](#reproducible-quickstart--setup)
+- [📁 Project Directory Layout](#project-directory-layout)
+- [🧪 Testing & Validation](#testing--validation)
+- [🔮 Future Improvements & Roadmap](#future-improvements--roadmap)
+- [🤝 Contributing Guidelines](#contributing-guidelines)
+- [👨‍💻 Author & Contributions](#author--contributions)
+
+---
+
+<a id="executive-summary--overview"></a>
 ## 📖 Executive Summary & Overview
 
-The **Business Analytics Laboratory Suite** (`Business_Project_Analaysis-`) presents a multi-experiment portfolio demonstrating end-to-end business intelligence engineering. Real-world retail datasets frequently exhibit structural anomalies, including null tokens, unformatted timestamps, mismatched currencies, and inconsistent product taxonomies.
+Raw commercial datasets gathered from retail POS systems, cafes, and hospitality franchises often suffer from corrupt formatting, whitespace padding, date mismatches, and negative price errors. Conducting business intelligence on dirty datasets yields erroneous executive decisions.
 
-This project synthesizes **Experiment 2**, **Experiment 3**, **Experiment 4**, and **Assignment 6**, establishing systematic data cleaning protocols using **Power Query M**, financial metric calculations via **DAX**, and multi-page dashboard visualizations in **Power BI Desktop**.
+The **Business Analytics Laboratory Suite** (`Business_Project_Analaysis-`) presents an integrated academic laboratory portfolio covering **Experiments 2, 3, 4, and Assignment 6** developed during Semester V BCA coursework at Alliance University. The suite demonstrates systematic data transformation protocols using **Power Query M**, DAX metric development, and interactive dashboard engineering in **Microsoft Power BI**.
 
-<a id="toc"></a>
-## 📑 Table of Contents
+---
 
-- [📖 Executive Summary & Overview](#overview)
-- [🎯 Key Features & Capabilities](#features)
-- [🏗️ System Architecture & Pipeline](#architecture)
-- [🛠️ Tech Stack Breakdown](#tech-stack)
-- [⚙️ Reproducible Quickstart & Setup](#setup)
-- [📁 Project Directory Layout](#project-layout)
-- [👨‍💻 Author & Contributions](#author)
-
-<a id="features"></a>
+<a id="key-features--capabilities"></a>
 ## 🎯 Key Features & Capabilities
 
-- **Power Query Data Cleansing (Exp 4):** Automated cleaning pipelines for cafe sales datasets: trimming whitespace, imputing missing values, and type casting.
-- **Multi-Location Coffee Shop Analytics (Exp 3):** Full dashboard deployment analyzing unit economics, customer order volume, and geographic store performance.
-- **Advanced DAX KPI Engineering:** Custom DAX measures for Year-to-Date (YTD) revenue, moving averages, and transaction frequency.
-- **Formal Academic Documentation:** Detailed experimental reports (`.pdf`) validating methodology, hypothesis formulation, and analytical conclusions.
+### 🧹 1. Power Query M Data Cleansing (Experiment 4)
+- **Cafe Sales Cleansing:** Imputing missing customer values, trimming whitespace, and validating currency formats.
+- Complete documentation in `Cafe_Sales_Data_Cleaning_Report_Analaysis.pdf`.
 
-<a id="architecture"></a>
+### 📊 2. Coffee Shop Sales BI Engine (Experiment 3)
+- Interactive Power BI report (`Coffee shop dashboard project (1).pbix`) and source ledger (`Coffee Shop Sales.xlsx`).
+- Time-series sales curves, product category margin comparisons, and hourly order velocity metrics.
+
+### 📑 3. Academic Verification (Experiment 2 & Assignment 6)
+- Comprehensive methodology reports (`EXP-2 (Report).pdf`, `BA assignment 6.pdf`) validating hypothesis formulations.
+
+---
+
+<a id="system-architecture--pipeline"></a>
 ## 🏗️ System Architecture & Pipeline
 
 ```mermaid
@@ -66,38 +94,55 @@ flowchart TD
     Modeling --> Visualization
 ```
 
-<a id="tech-stack"></a>
+---
+
+<a id="tech-stack-breakdown"></a>
 ## 🛠️ Tech Stack Breakdown
 
-| Component | Tool / Language | Functional Role |
+| Component | Technology | Functional Role |
 | :--- | :--- | :--- |
-| **ETL & Data Munging** | Power Query M | Cleaning and shaping raw commercial datasets |
+| **ETL & Data Munging** | Power Query M | Cleansing and shaping raw commercial datasets |
 | **Data Modeling** | Power BI DAX | Calculating dynamic time-series and aggregate KPIs |
 | **Reporting Engine** | Microsoft Power BI Desktop | Interactive visual reports (`.pbix`) |
 | **Data Formats** | Excel (`.xlsx`), CSV | Structured source transactional files |
-| **Documentation** | LaTeX / Word / PDF | Formal academic lab reports and methodology logs |
+| **Documentation** | Technical Reports (`.pdf`) | Formal academic lab reports and methodology logs |
 
-<a id="setup"></a>
+---
+
+<a id="laboratory-experiments-breakdown"></a>
+## 🔬 Laboratory Experiments Breakdown
+
+| Experiment | Title | Core Artifacts | Focus |
+| :--- | :--- | :--- | :--- |
+| **Experiment 2** | Retail Performance Modeling | `Experiment 2.pbix`, `EXP-2 (Report).pdf` | Transactional data aggregation & DAX KPIs |
+| **Experiment 3** | Coffee Shop Sales Analytics | `Coffee shop dashboard project (1).pbix` | Hourly footfall analysis & category margins |
+| **Experiment 4** | Cafe Sales Data Cleansing | `Experiment 4 (1).pbix`, Report (`.pdf`) | Power Query M transformation pipeline |
+| **Assignment 6** | Business Analytics Strategy | `BA assignment 6.pdf` | Strategic enterprise decision reporting |
+
+---
+
+<a id="reproducible-quickstart--setup"></a>
 ## ⚙️ Reproducible Quickstart & Setup
 
 ### Prerequisites
-- Microsoft Power BI Desktop (May 2024 or newer recommended)
-- Microsoft Office or LibreOffice Calc
+- Microsoft Power BI Desktop
+- Microsoft Excel
 
 ```bash
 # 1. Clone repository
 git clone https://github.com/Amaraiah11/Business_Project_Analaysis-.git
 cd Business_Project_Analaysis-
 
-# 2. Open any experimental Power BI report
-# Example: Experiment 4 Cafe Sales
+# 2. Launch Experiment 4 Cafe Sales Cleansing Report
 start "Experiment 4/Experiment 4 (1).pbix"
 
-# Example: Experiment 3 Coffee Shop Dashboard
+# 3. Launch Experiment 3 Coffee Shop Dashboard
 start "Experiment 3/Coffee shop dashboard project (1).pbix"
 ```
 
-<a id="project-layout"></a>
+---
+
+<a id="project-directory-layout"></a>
 ## 📁 Project Directory Layout
 
 ```text
@@ -116,22 +161,49 @@ Business_Project_Analaysis-/
     └── Experiment 4 (1).pbix                        # Cleaned data model & visual report
 ```
 
-<a id="author"></a>
+---
+
+<a id="testing--validation"></a>
+## 🧪 Testing & Validation
+
+- **Query Dependency Verification:** Inspected Power Query Applied Steps to verify all transformation steps execute idempotently on refresh.
+- **Relational Integrity:** Verified 1-to-many relationships in star schemas with zero ambiguous bidirectional filters.
+
+---
+
+<a id="future-improvements--roadmap"></a>
+## 🔮 Future Improvements & Roadmap
+
+- [ ] Integrate automated anomaly detection alerts for negative margin transactions.
+- [ ] Connect Power BI dashboards to live SQL Azure databases.
+
+---
+
+<a id="author--contributions"></a>
 ## 👨‍💻 Author & Contributions
 
-This project is developed and maintained with high technical rigour by **Amaraiah C**, Software Engineer and Data Analytics Practitioner studying Bachelor of Computer Applications (BCA) at Alliance University.
+This project is developed and maintained with rigorous engineering standards by **Amaraiah C**, Software Developer and Applied Data Analytics Practitioner studying Bachelor of Computer Applications (BCA) at Alliance University, Bangalore.
 
-- 🌐 **GitHub:** [@Amaraiah11](https://github.com/Amaraiah11)
-- 💼 **LinkedIn:** [Connect on LinkedIn](https://www.linkedin.com/in/amaraiah-c/)
-- 📧 **Institutional Contact:** `camaraiahBCA24@ced.alliance.edu.in`
+- 🌐 **GitHub Profile:** [@Amaraiah11](https://github.com/Amaraiah11)
+- 💼 **LinkedIn Profile:** [Connect on LinkedIn](https://www.linkedin.com/in/amaraiah-c/)
+- 📧 **Institutional Email:** `camaraiahBCA24@ced.alliance.edu.in`
 
-### 🤝 Contribution Guidelines
+### 🤝 Contributing Guidelines
 Contributions, bug reports, and architectural discussions are welcome!
 1. **Fork** the repository: `https://github.com/Amaraiah11/Business_Project_Analaysis-`
-2. **Branch**: `git checkout -b feature/your-feature-name`
-3. **Commit**: `git commit -m "feat: enhance feature logic"`
-4. **Push**: `git push origin feature/your-feature-name`
-5. **Open Pull Request** against the `Amaraiah-C` branch.
+2. **Create a Feature Branch:**
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. **Commit Your Enhancements:**
+   ```bash
+   git commit -m "feat: enhance feature logic"
+   ```
+4. **Push to Your Branch:**
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+5. **Open a Pull Request** against the `Amaraiah-C` branch.
 
 ---
 

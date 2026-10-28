@@ -1,7 +1,7 @@
 # ☕ Business Analytics Laboratory Suite — Power Query ETL & Multi-Experiment Dashboards
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=854D0E,CA8A04,FACC15&height=220&section=header&text=Business%20Analytics%20Laboratory&fontSize=40&fontColor=ffffff&fontAlignY=38&desc=Power%20Query%20ETL%2C%20Cafe%20Sales%20Cleaning%20%26%20Executive%20BI%20Dashboards&descSize=16&descAlignY=60&descAlign=50" width="100%" alt="Business Analytics Laboratory Banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:854D0E,50:CA8A04,100:FACC15&customColorList=854D0E,CA8A04,FACC15&height=220&section=header&text=Business%20Analytics%20Laboratory&fontSize=38&fontColor=ffffff&fontAlignY=38&desc=Power%20Query%20ETL%2C%20Cafe%20Sales%20Cleaning%20%26%20Executive%20BI%20Dashboards&descSize=15&descAlignY=60&descAlign=50" width="100%" alt="Business Analytics Laboratory Banner" />
 </p>
 
 <p align="center">
@@ -212,5 +212,5 @@ Contributions, bug reports, and architectural discussions are welcome!
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=854D0E,CA8A04,FACC15&height=100&section=footer" width="100%" alt="Footer Banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:854D0E,50:CA8A04,100:FACC15&customColorList=854D0E,CA8A04,FACC15&height=100&section=footer" width="100%" alt="Footer Banner" />
 </p>

@@ -1,167 +1,144 @@
-# Café Sales Data Cleaning Using Power Query
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=854D0E,CA8A04,FACC15&height=220&section=header&text=Business%20Analytics%20Laboratory&fontSize=40&fontColor=ffffff&fontAlignY=38&desc=Power%20Query%20ETL%2C%20Cafe%20Sales%20Cleaning%20%26%20Executive%20BI%20Dashboards&descSize=16&descAlignY=60&descAlign=50" width="100%" alt="Business Analytics Laboratory Banner" />
+</p>
 
-## Overview
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Power%20BI%20Desktop-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" alt="Power BI" />
+  <img src="https://img.shields.io/badge/ETL-Power%20Query%20M-107C41?style=for-the-badge&logo=microsoftexcel&logoColor=white" alt="Power Query" />
+  <img src="https://img.shields.io/badge/Course-BCA%20Semester%20V-1E3A8A?style=for-the-badge" alt="Course" />
+  <img src="https://img.shields.io/badge/Status-Completed%20Lab%20Suite-success?style=for-the-badge" alt="Status" />
+</p>
 
-This project demonstrates the cleaning and preparation of a **café sales dataset using Power BI and Power Query**.
+<a id="overview"></a>
+## 📖 Executive Summary & Overview
 
-The raw dataset, `dirty_cafe_sales.csv`, contains **10,000 transaction records** with several data quality issues such as missing values, `ERROR` and `UNKNOWN` entries, incorrect data types, extra spaces, hidden characters, and invalid values.
+The **Business Analytics Laboratory Suite** (`Business_Project_Analaysis-`) presents a multi-experiment portfolio demonstrating end-to-end business intelligence engineering. Real-world retail datasets frequently exhibit structural anomalies, including null tokens, unformatted timestamps, mismatched currencies, and inconsistent product taxonomies.
 
-The objective of this project is to transform the raw dataset into a **clean, consistent, and analysis-ready dataset**.
+This project synthesizes **Experiment 2**, **Experiment 3**, **Experiment 4**, and **Assignment 6**, establishing systematic data cleaning protocols using **Power Query M**, financial metric calculations via **DAX**, and multi-page dashboard visualizations in **Power BI Desktop**.
 
-## Problem Statement
+<a id="toc"></a>
+## 📑 Table of Contents
 
-A retail company receives sales data containing incomplete and inconsistent records. Before the data can be used for business reporting, it must be cleaned and standardized.
+- [📖 Executive Summary & Overview](#overview)
+- [🎯 Key Features & Capabilities](#features)
+- [🏗️ System Architecture & Pipeline](#architecture)
+- [🛠️ Tech Stack Breakdown](#tech-stack)
+- [⚙️ Reproducible Quickstart & Setup](#setup)
+- [📁 Project Directory Layout](#project-layout)
+- [👨‍💻 Author & Contributions](#author)
 
-Power Query was used to identify and resolve these data quality issues through a sequence of **22 transformation steps**.
+<a id="features"></a>
+## 🎯 Key Features & Capabilities
 
-## Dataset Information
+- **Power Query Data Cleansing (Exp 4):** Automated cleaning pipelines for cafe sales datasets: trimming whitespace, imputing missing values, and type casting.
+- **Multi-Location Coffee Shop Analytics (Exp 3):** Full dashboard deployment analyzing unit economics, customer order volume, and geographic store performance.
+- **Advanced DAX KPI Engineering:** Custom DAX measures for Year-to-Date (YTD) revenue, moving averages, and transaction frequency.
+- **Formal Academic Documentation:** Detailed experimental reports (`.pdf`) validating methodology, hypothesis formulation, and analytical conclusions.
 
-**Dataset:** `dirty_cafe_sales.csv`
+<a id="architecture"></a>
+## 🏗️ System Architecture & Pipeline
 
-**Records:** 10,000
+```mermaid
+flowchart TD
+    subgraph RawData["Raw Data Ingestion"]
+        D1["Cafe Sales Logs (.xlsx)"]
+        D2["Coffee Shop Sales Data"]
+    end
 
-### Columns
+    subgraph ETL["Power Query ETL Pipeline"]
+        E1["Null Imputation & Trimming"]
+        E2["Data Type Casting"]
+        E3["Column Normalization"]
+    end
 
-* Transaction ID
-* Item
-* Quantity
-* Price Per Unit
-* Total Spent
-* Payment Method
-* Location
-* Transaction Date
+    subgraph Modeling["Data Modeling & DAX"]
+        M1["Star Schema Relational Design"]
+        M2["Calculated Metrics & Measures"]
+    end
 
-## Tools Used
+    subgraph Visualization["Power BI Interactive Dashboards"]
+        V1["Sales Performance Dashboard (.pbix)"]
+        V2["Executive KPI Matrix"]
+    end
 
-| Tool        | Purpose                          |
-| ----------- | -------------------------------- |
-| Power BI    | Data analysis and reporting      |
-| Power Query | Data cleaning and transformation |
-| CSV         | Source data                      |
-
-## Data Cleaning Process
-
-The following major operations were performed in Power Query:
-
-### Data Preparation
-
-* Imported the CSV file into Power BI.
-* Initially kept columns as Text.
-* Promoted the first row as headers.
-* Replaced `ERROR` and `UNKNOWN` values with blanks.
-
-### Data Type Correction
-
-Appropriate data types were assigned:
-
-* Quantity → Number
-* Price Per Unit → Decimal Number
-* Total Spent → Decimal Number
-* Transaction Date → Date
-* Descriptive fields → Text
-
-### Missing Value Handling
-
-Missing values were handled using calculations wherever possible.
-
-```text
-Total Spent = Quantity × Price Per Unit
+    RawData --> ETL
+    ETL --> Modeling
+    Modeling --> Visualization
 ```
 
-```text
-Quantity = Total Spent ÷ Price Per Unit
+<a id="tech-stack"></a>
+## 🛠️ Tech Stack Breakdown
+
+| Component | Tool / Language | Functional Role |
+| :--- | :--- | :--- |
+| **ETL & Data Munging** | Power Query M | Cleaning and shaping raw commercial datasets |
+| **Data Modeling** | Power BI DAX | Calculating dynamic time-series and aggregate KPIs |
+| **Reporting Engine** | Microsoft Power BI Desktop | Interactive visual reports (`.pbix`) |
+| **Data Formats** | Excel (`.xlsx`), CSV | Structured source transactional files |
+| **Documentation** | LaTeX / Word / PDF | Formal academic lab reports and methodology logs |
+
+<a id="setup"></a>
+## ⚙️ Reproducible Quickstart & Setup
+
+### Prerequisites
+- Microsoft Power BI Desktop (May 2024 or newer recommended)
+- Microsoft Office or LibreOffice Calc
+
+```bash
+# 1. Clone repository
+git clone https://github.com/Amaraiah11/Business_Project_Analaysis-.git
+cd Business_Project_Analaysis-
+
+# 2. Open any experimental Power BI report
+# Example: Experiment 4 Cafe Sales
+start "Experiment 4/Experiment 4 (1).pbix"
+
+# Example: Experiment 3 Coffee Shop Dashboard
+start "Experiment 3/Coffee shop dashboard project (1).pbix"
 ```
 
+<a id="project-layout"></a>
+## 📁 Project Directory Layout
+
 ```text
-Price Per Unit = Total Spent ÷ Quantity
+Business_Project_Analaysis-/
+├── BA assignment 6.pdf                               # Formal assignment report
+├── README.md                                         # Main project documentation
+├── Experiment 2/
+│   ├── EXP-2 (Report).pdf                           # Experiment 2 methodology report
+│   └── Experiment 2.pbix                            # Power BI visual analytics file
+├── Experiment 3/
+│   ├── Coffee shop dashboard project (1).pbix       # Coffee shop dashboard
+│   ├── Coffee Shop Sales.xlsx                       # Source dataset
+│   └── Exp_3 Report.pdf                             # Lab report
+└── Experiment 4/
+    ├── Cafe_Sales_Data_Cleaning_Report_Analaysis.pdf # Power Query data cleaning report
+    └── Experiment 4 (1).pbix                        # Cleaned data model & visual report
 ```
 
-The cleaning process handled:
+<a id="author"></a>
+## 👨‍💻 Author & Contributions
 
-* 173 missing Total Spent values
-* 138 missing Quantity values
-* 179 missing Price Per Unit values
-* 333 missing Item values
-* 2,579 missing Payment Method values
-* 3,265 missing Location values
-* 159 records with missing Transaction Date
+This project is developed and maintained with high technical rigour by **Amaraiah C**, Software Engineer and Data Analytics Practitioner studying Bachelor of Computer Applications (BCA) at Alliance University.
 
-### Data Quality Improvements
+- 🌐 **GitHub:** [@Amaraiah11](https://github.com/Amaraiah11)
+- 💼 **LinkedIn:** [Connect on LinkedIn](https://www.linkedin.com/in/amaraiah-c/)
+- 📧 **Institutional Contact:** `camaraiahBCA24@ced.alliance.edu.in`
 
-Additional transformations included:
+### 🤝 Contribution Guidelines
+Contributions, bug reports, and architectural discussions are welcome!
+1. **Fork** the repository: `https://github.com/Amaraiah11/Business_Project_Analaysis-`
+2. **Branch**: `git checkout -b feature/your-feature-name`
+3. **Commit**: `git commit -m "feat: enhance feature logic"`
+4. **Push**: `git push origin feature/your-feature-name`
+5. **Open Pull Request** against the `Amaraiah-C` branch.
 
-* Removing unnecessary columns
-* Renaming columns
-* Rechecking data types
-* Replacing missing Item values
-* Replacing missing Payment Method values
-* Handling missing Location values
-* Removing records with missing dates
-* Checking duplicate records
-* Trimming extra spaces
-* Removing hidden/non-printable characters
-* Removing invalid Quantity values
-* Removing invalid Price values
+---
 
-## Transformation Workflow
+<p align="center">
+  <b>⭐ If this codebase or documentation assisted your engineering workflows, please star the repository! ⭐</b>
+</p>
 
-```text
-Raw Café Sales Data
-        ↓
-Import into Power BI
-        ↓
-Power Query Editor
-        ↓
-Handle ERROR / UNKNOWN values
-        ↓
-Correct Data Types
-        ↓
-Handle Missing Values
-        ↓
-Calculate Missing Sales Values
-        ↓
-Clean Text Data
-        ↓
-Remove Invalid Records
-        ↓
-Check Duplicates
-        ↓
-Final Clean Dataset
-        ↓
-Ready for Power BI Analysis
-
-## Key Results
-
-After the cleaning process:
-
-* Data types were standardized.
-* Incorrect placeholder values were handled.
-* Missing values were calculated or replaced where appropriate.
-* Invalid quantity and price records were removed.
-* Text fields were standardized.
-* Extra spaces and hidden characters were removed.
-* Duplicate records were checked.
-* The dataset became more consistent and reliable.
-
-## Business Insights
-
-The cleaned dataset can support future analysis of:
-
-* Café sales performance
-* Product/item performance
-* Pricing
-* Payment methods
-* Location-based sales
-* Transaction trends
-* Inventory requirements
-* Customer preferences
-
-Clean and reliable data helps reduce reporting errors and supports better business decisions.
-
-
-
-## Outcome
-
-The project successfully transformed the raw café sales dataset into a **clean, organized, and analysis-ready dataset** using Power Query.
-
-This experiment demonstrates how Power Query can be used to systematically identify and resolve common data quality problems before performing business analysis.
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=854D0E,CA8A04,FACC15&height=100&section=footer" width="100%" alt="Footer Banner" />
+</p>
